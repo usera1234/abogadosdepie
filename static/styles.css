@@ -1,0 +1,108 @@
+    h2{
+      font-family: 'Times New Roman', Times, serif;
+      font-size:40; 
+    }
+    h3{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 30;
+    }
+    h4{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 10;
+    }
+    p{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+    .logo{
+      --bg-height: ;
+
+      height: var(--bg-height);               /* 200px de alto del contenedor */
+      display: block;
+    }
+    .btn {
+      --bg-background-image: ;
+
+      background-image: var(src(--bg-background-image));
+      background: rgb(136, 21, 88);
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: 'Times New Roman', Times, serif;
+      font-size:larger;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .container-column{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+    }
+    .container-row{
+      display:flex;
+      flex-direction:row;
+    }
+    .container{
+    --bg-gap: ;
+
+    background-color: white;
+    padding: 10px;
+    display: flex;              /* Activa flexbox */
+    align-items: center;        /* Centra verticalmente */
+    gap: var(--bg-gap);         /* Espacio entre elementos */
+    box-sizing: border-box;
+    flex: 1;
+    }
+    .container .fondo{
+    position: absolute;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+    }
+    .tarjeta-intro{
+      width: 100px;
+      height:auto;
+      display: block;
+      margin: 50px;
+    }
+    .side-bar{
+        height: 100%;
+        width: 200px;
+        background-color: rgb(100, 94, 94);
+    }
+    .text{
+        --bg-height: ;
+        --bg-width: ;
+
+        height: var(--bg-height);
+        width: var(--bg-width);
+        color: black;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .circulo {
+      --bg-top: ;
+      --bg-left: ;
+      --bg-width: ; 
+      --bg-height: ; 
+      --bg-background-color: ;  
+
+      position: absolute;
+      top: var(--bg-top);       /* distancia desde arriba */
+      left: var(--bg-left);       /* distancia desde la izquierda */
+      width: var(--bg-width);
+      height: var(--bg-)height;
+      background-color: var(--bg-background-color); /* celeste transparente */
+      border-radius: 50%;
+      z-index: 0;       /* queda detrás del contenido */
+      pointer-events: none; /* el mouse "lo atraviesa" */
+    }   
+    .hor-bar{
+        width:1800px;
+        height: 4px;
+        background-color: rgb(88, 1, 62);
+        border-radius: 20px;
+    }
