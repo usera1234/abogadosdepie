@@ -1,3 +1,4 @@
+<!-- Prender host en puerto 5000 = py -m http.server 5500-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,15 +7,21 @@
   <title>Abogados de Pie</title>
   <link rel="stylesheet" href="static/styles.css">
 </head>
-<body>
+<body style="overflow-x:hidden;">
   <header>
-    <div class="container" style="gap: 30rem; height: 300px; width: 100%;">                             <!--Encabezado-->
-      <div class="container-column" style="margin-left: 620px; gap:2rem">                               
-        <img src="static/imagenes/10a_logo_adp.png" alt="Logo Abogados de Pie" style="height: 200px;width:600px;"><!--Titulo encabezado-->
+    <div class="container" style="gap: 30rem; height: 300px; width: 100%; display: flex; justify-content: center;">                             <!--Encabezado-->
+      <div class="container-column" style="gap:2rem; width: 50%">                               
+        <img src="static/imagenes/10a_logo_adp.png" alt="Logo Abogados de Pie" style="height: 200px;width:80%;"><!--Titulo encabezado-->
         <div class="container-row" style="align-items: center; gap:4rem;">                              <!--Botones redirigir-->
-           <button onclick="dirigirSeccion('quienes-somos-direccion')" class="btn" style="color:white;width:170px; height: 50px;"><h4>Quiénes somos</h4></button>
+           <button class="btn" style="color:white;width:170px; height: 50px;">
+            <a href="./paginaEquipo/quienesSomos.html"></a>
+            <h4>Quiénes somos</h4>
+          </button>
            <button onclick="dirigirSeccion('vision-direccion')" class="btn" style="color:white;width:170px; height: 50px;"><h4>Visión</h4></button>
-           <button onclick="dirigirSeccion('objetivos-direccion')" class="btn" style="color:white;width:170px; height: 50px;"><h4>Objetivos</h4></button>
+           <button class="btn" style="color:white;width:170px; height: 50px;">
+            <a href="paginaEquipo/quienesSomos.html"></a>
+            <h4>Objetivos</h4>
+          </button>
         </div>
       </div>
     </div>
@@ -54,9 +61,9 @@
    <div class="hor-bar" style="height: 2px; width: 100%"></div>                                         <!--Linea horizontal divisora-->
    <footer>
     <div id="footer" class="container-row" style="height:100px">                                        <!--Pie de pagina-->
-      <div class="container-row" style="gap:20rem;">
+      <div class="container-row" style="gap:12%; align-items: center;">
         <div class="container-row">                                                                      <!--Logo pie de pagina-->
-          <img class="logo" src="static/imagenes/10a_logo_adp.png" alt="logo abogados de pie" style="padding-top:20px; padding-left:65px;height:100px; width: 300px"> <!--Logo pie de pagina-->
+          <img class="logo" src="static/imagenes/10a_logo_adp.png" alt="logo abogados de pie" style="padding-top:20px; padding-left:30px;height:100px; width: 300px"> <!--Logo pie de pagina-->
         </div>
         <div class="container-row" style="gap:20rem;">                                                  <!--Botones redes-->
           <div class="container-row" style="gap:2rem; padding-top:20px;">
@@ -90,8 +97,8 @@
             </div>
           </div>
         </div>
-      <div class="container-column" style="height:110px;padding-top:20px; padding-left: 25px; gap: 20rem; text-align: center;"> <!--Direccion-->
-          <p style="font-size: 20px;">Tucumán 326 Piso 3 Oficina 15,<br> Ciudad de Buenos Aires, Argentina</p>
+      <div class="container-column" style="height:110px;  padding-left: 35px; gap: 20rem; text-align: center; padding-top: 20px"> <!--Direccion-->
+          <p style="font-size: 20px;">Tucumán 326 Piso 3 Oficina 15, Ciudad de Buenos Aires, Argentina</p>
         </div>
       </div>
     </div>

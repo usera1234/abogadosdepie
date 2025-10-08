@@ -106,3 +106,10 @@
         background-color: rgb(88, 1, 62);
         border-radius: 20px;
     }
+    .html-body {
+      margin: 0px;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
