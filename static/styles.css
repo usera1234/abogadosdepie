@@ -106,10 +106,12 @@
         background-color: rgb(88, 1, 62);
         border-radius: 20px;
     }
-    .html-body {
+    .body {
       margin: 0px;
-      padding: 0;
+      padding: 0px;
+      height: 1000px;
       box-sizing: border-box;
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
+      background-size: cover; 
     }

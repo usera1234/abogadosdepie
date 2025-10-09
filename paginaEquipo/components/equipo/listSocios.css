@@ -1,0 +1,58 @@
+app-list-socios .listSociosContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+app-list-socios .listSociosRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+app-list-socios .listSociosItem {
+    font-size: 1.6rem;
+    font-family: "Lora", Sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    width: 150px;
+    border: none;
+}
+
+app-list-socios .listSociosImg {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+app-list-socios .listSociosRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+app-list-socios .listSociosRedesImg {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin: 0 5px;
+}
+
+app-list-socios .listSociosRedesRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

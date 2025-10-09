@@ -7,6 +7,8 @@ app-equipo-header .equipoHeaderContainer {
     height: 100px;
     background-color: white;
     border-bottom: 2px solid #7b0033;
+    position: relative;
+    z-index: 3;
 }
 
 app-equipo-header .equipoHeaderContainerImg {
@@ -20,6 +22,7 @@ app-equipo-header .equipoHeaderImg {
     height: 100px;
     width: 250px;
     object-fit: contain;
+    margin-left: 50px;
 }
 
 app-equipo-header .equipoHeaderContainerNav {
@@ -28,15 +31,18 @@ app-equipo-header .equipoHeaderContainerNav {
     align-items: center;
     justify-content: center;
     gap: 50px;
+    margin-right: 50px;
 }
 
 app-equipo-header .equipoHeaderNavItem {
     font-size: 18px;
-    color: #333;
+    color: #000000;
+    background-color: white;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    border: none;
 }
 
 app-equipo-header .equipoHeaderBanner {

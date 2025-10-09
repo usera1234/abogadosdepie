@@ -1,0 +1,28 @@
+app-equipo-list .equipoListContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+app-equipo-list .equipoListNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    border-right: 2px solid #000000;
+}
+
+app-equipo-list .equipoListNavItem {
+    font-size: 1.8rem;
+    font-family: "Lora", Sans-serif;
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    border: none;
+}
