@@ -1,4 +1,4 @@
-app-list-socios .listSociosContainer {
+app-categories-list .listEquipoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,7 @@ app-list-socios .listSociosContainer {
     padding: 20px 0;
 }
 
-app-list-socios .listSociosRow {
+app-categories-list .listEquipoRow {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,7 +17,7 @@ app-list-socios .listSociosRow {
     margin: 20px 0;
 }
 
-app-list-socios .listSociosItem {
+app-categories-list .listEquipoItem {
     font-size: 1.6rem;
     font-family: "Lora", Sans-serif;
     color: #000000;
@@ -27,7 +27,7 @@ app-list-socios .listSociosItem {
     border: none;
 }
 
-app-list-socios .listSociosImg {
+app-categories-list .listEquipoImg {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -35,7 +35,7 @@ app-list-socios .listSociosImg {
     margin-bottom: 10px;
 }
 
-app-list-socios .listSociosRedes {
+app-categories-list .listEquipoRedes {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,14 +43,14 @@ app-list-socios .listSociosRedes {
     margin-top: 10px;
 }
 
-app-list-socios .listSociosRedesImg {
-    width: 30px;
-    height: 30px;
+app-categories-list .listEquipoRedesImg {
+    width: 10px;
+    height: 10px;
     object-fit: contain;
     margin: 0 5px;
 }
 
-app-list-socios .listSociosRedesRow {
+app-categories-list .listEquipoRedesRow {
     display: flex;
     flex-direction: row;
     align-items: center;

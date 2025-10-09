@@ -1,8 +1,8 @@
 app-equipo-list .equipoListContainer {
     display: flex;
     flex-direction: row;
-    align-items: space-between;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
     width: 100%;
     background-color: #ffffff;
 }
@@ -14,7 +14,6 @@ app-equipo-list .equipoListNav {
     justify-content: center;
     gap: 30px;
     margin: 20px 0;
-    border-right: 2px solid #000000;
 }
 
 app-equipo-list .equipoListNavItem {
@@ -25,4 +24,81 @@ app-equipo-list .equipoListNavItem {
     background-color: #ffffff;
     text-decoration: none;
     border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+app-equipo-list .listEquipoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+app-equipo-list .listEquipoRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+app-equipo-list .listEquipoItem {
+    font-size: 1.2rem;
+    font-family: "Lora", Sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    width: auto;
+    border: none;
+}
+
+app-equipo-list .listEquipoImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+app-equipo-list .listEquipoRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+}
+
+app-equipo-list .listEquipoRedesImg {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 0 5px;
+}
+
+app-equipo-list .listEquipoRedesRow     {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+app-equipo-list .listEquipoRedesText {
+    font-size: 1rem;
+    font-family: "Lora", Sans-serif;
+    color: #000000;
+    margin: 0;
+    text-decoration: none;
+}
+
+app-equipo-list .listEquipoTitle {
+    font-size: 1.5rem;
+    font-family: "Lora", Sans-serif;
+    color: #006B93;
+    margin: 0;
+    text-decoration: none;
 }
