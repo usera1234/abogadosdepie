@@ -1,7 +1,6 @@
-import './equipo/list-socios.js';
-import './equipo/list-asociados.js';
-import './equipo/list-colaboradores.js';
-import './equipo/list-staff.js';
+import './equipo/list-comisiones.js';
+import './equipo/list-autoridades.js';
+import './equipo/list-secretarias.js';
 
 class AppEquipoList extends HTMLElement {
     constructor() {
@@ -9,55 +8,52 @@ class AppEquipoList extends HTMLElement {
         this.innerHTML = `
             <div class="equipoListContainer">
                 <div class="equipoListNav">
-                    <button id="btn-socios" class="equipoListNavItem">Socios</button>
-                    <button id="btn-asociados" class="equipoListNavItem">Asociados</button>
-                    <button id="btn-colaboradores" class="equipoListNavItem">Colaboradores</button>
-                    <button id="btn-staff" class="equipoListNavItem">Staff</button>
+                    <button id="btn-autoridades" class="equipoListNavItem nav-item-clicked">Autoridades</button>
+                    <button id="btn-secretarias" class="equipoListNavItem">Secretarías</button>
+                    <button id="btn-comisiones" class="equipoListNavItem">Comisiones</button>
                 </div>
                 <div id="list-container">
+                    <list-autoridades><list-autoridades>
                 </div>
             </div>
         `
     }
     connectedCallback() {
         const listContainer = this.querySelector('#list-container');
-        const sociosBtn = this.querySelector('#btn-socios');
-        const asociadosBtn = this.querySelector('#btn-asociados');
-        const colaboradoresBtn = this.querySelector('#btn-colaboradores');
-        const staffBtn = this.querySelector('#btn-staff');    
+        const autoridadesBtn = this.querySelector('#btn-autoridades');
+        const secretariasBtn = this.querySelector('#btn-secretarias');
+        const comisionesBtn = this.querySelector('#btn-comisiones');
 
-        sociosBtn.addEventListener('click', () => {
-            // Cuando se hace clic:
-            // a. Limpiamos el área de contenido.
+        autoridadesBtn.addEventListener('click', () => {
             listContainer.innerHTML = '';
-            // b. Insertamos el componente <list-socios> completo.
-            listContainer.innerHTML = '<list-socios></list-socios>';
+            listContainer.innerHTML = '<list-autoridades></list-autoridades>';
+            entry.target.classList.add('nav-item-clicked');
+            io.unobserve(entry.target);     
         });
 
-        asociadosBtn.addEventListener('click', () => {
-            // Cuando se hace clic:
-            // a. Limpiamos el área de contenido.
+        secretariasBtn.addEventListener('click', () => {
             listContainer.innerHTML = '';
-            // b. Insertamos el componente <list-socios> completo.
-            listContainer.innerHTML = '<list-asociados></list-asociados>';
+            listContainer.innerHTML = '<list-secretarias></list-secretarias>';
         });
 
-        colaboradoresBtn.addEventListener('click', () => {
-            // Cuando se hace clic:
-            // a. Limpiamos el área de contenido.
+        comisionesBtn.addEventListener('click', () => {
             listContainer.innerHTML = '';
-            // b. Insertamos el componente <list-socios> completo.
-            listContainer.innerHTML = '<list-colaboradores></list-colaboradores>';
+            listContainer.innerHTML = '<list-comisiones></list-comisiones>';
         });
 
-        staffBtn.addEventListener('click', () => {
-            // Cuando se hace clic:
-            // a. Limpiamos el área de contenido.
-            listContainer.innerHTML = '';
-            // b. Insertamos el componente <list-socios> completo.
-            listContainer.innerHTML = '<list-staff></list-staff>';
+        const targets = [autoridadesBtn, secretariasBtn, comisionesBtn].filter(Boolean);
+
+        targets.forEach(boton => {
+    
+            boton.addEventListener('click', () => {
+                targets.forEach(otroBoton => {
+                    otroBoton.classList.remove('nav-item-clicked');
+                });                
+                boton.classList.add('nav-item-clicked');
+                
+                console.log(`Se hizo clic en ${boton.id}, se agregó la clase.`);
+            });
         });
-        
 
     }
 }

@@ -1,41 +1,54 @@
 app-equipo-list .equipoListContainer {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: space-evenly;
     width: 100%;
     background-color: #ffffff;
+    font-family: "Lora", Sans-serif;
+    
+
 }
 
 app-equipo-list .equipoListNav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 30px;
     margin: 20px 0;
+    flex-shrink: 0;
 }
 
 app-equipo-list .equipoListNavItem {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-family: "Lora", Sans-serif;
-    width: 100%;
+    width: auto;
     color: #000000;
     background-color: #ffffff;
     text-decoration: none;
     border: none;
     text-align: left;
     cursor: pointer;
+    
 }
+
+app-equipo-list .nav-item-clicked {
+    color: #006B93;
+    font-size: 2.5rem;
+}
+
+
 
 app-equipo-list .listEquipoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: auto;
     background-color: #ffffff;
     padding: 10px 0;
+    gap: 3rem;
 }
 
 app-equipo-list .listEquipoRow {
@@ -43,7 +56,21 @@ app-equipo-list .listEquipoRow {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10rem;
+}
+
+app-equipo-list .listEquipoColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+app-equipo-list .listEquipoText {
+    font-size: 1.5rem;
+    font-family: "Lora", Sans-serif;
+    color: #006B93;
 }
 
 app-equipo-list .listEquipoItem {

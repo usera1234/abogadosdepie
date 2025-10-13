@@ -4,10 +4,10 @@ class AppEquipoHeader extends HTMLElement {
         this.innerHTML = `
               <div class="equipoHeaderContainer">
                 <div class="equipoHeaderContainerImg">
-                 <img src="/static/imagenes/10a_logo_adp.png" alt="Equipo Header" class="equipoHeaderImg">
+                 <img onclick="location.href='index.html'" src="static/imagenes/10a_logo_adp.png" alt="Equipo Header" class="equipoHeaderImg">
                 </div>
                 <div class="equipoHeaderContainerNav">
-                  <button class="equipoHeaderNavItem">Nuestro Equipo</button>
+                  <button class="equipoHeaderNavItem" style="color: #7b0033; font-size: 2rem;">Nuestro Equipo</button>
                   <button class="equipoHeaderNavItem">Trabajá con Nosotros</button>
                   <button class="equipoHeaderNavItem">Contacto</button>
                 </div>
