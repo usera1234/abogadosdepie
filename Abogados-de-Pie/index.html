@@ -1,0 +1,75 @@
+<!-- Prender host en puerto 5000,  http://127.0.0.1:5500/ = py -m http.server 5500-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <title>Abogados de Pie</title>
+  <link rel="stylesheet" href="static/styles.css?10102025">
+  <link rel="stylesheet" href="components/footer.css">
+  <script type="module" src="components/app-footer.js?12102025"></script>
+  <link rel="icon" type="image/png" href="static\imagenes\escudo-abogacia-negro.png">
+</head>
+<body style="overflow-x:hidden;">
+  <header>
+    <div class="container" style="gap: 30rem; height: 300px; width: 100%; display: flex; justify-content: center;">                             <!--Encabezado-->
+      <div class="container-column" style="gap:2rem; width: 50%">                               
+        <img src="static/imagenes/10a_logo_adp.png" alt="Logo Abogados de Pie" style="height: 200px;width:80%;"><!--Titulo encabezado-->
+        <div class="container-row" style="align-items: center; gap:4rem;">                              <!--Botones redirigir-->
+           <button onclick="location.href='quienesSomos.html'" class="btn" style="color:white;width:170px; height: 50px;">
+            <a href="quienesSomos.html"></a>
+            <h4>Quiénes somos</h4>
+          </button>
+           <button onclick="dirigirSeccion('vision-direccion')" class="btn" style="color:white;width:170px; height: 50px;"><h4>Visión</h4></button>
+           <button class="btn" style="color:white;width:170px; height: 50px;">
+            <a href="paginaEquipo/quienesSomos.html"></a>
+            <h4>Objetivos</h4>
+          </button>
+        </div>
+      </div>
+    </div>
+   </header> 
+   <main class="container-column">
+    <div id="quienes-somos-direccion" class="container" style="gap: 10rem;">                            <!--Tarjeta Quienes somos-->
+      <div class="tarjeta">
+          <div class="text" style="text-align:center; height: 700px; width: 900px;">
+            <div class="container" style="flex-direction: column; border-radius: 50px;">
+                <h2>Quienes somos</h2>
+                <p>
+                  Somos un grupo de abogados independientes, provenientes de diversas ramas y trayectorias dentro del Derecho, unidos por una mirada humanista y la convicción de que la Justicia y las instituciones republicanas son pilares fundamentales para la vida democrática. Nos motiva la preocupación por el deterioro del Estado de Derecho en nuestro país y asumimos la responsabilidad de actuar frente a esta realidad. No representamos intereses sectoriales ni partidarios: somos profesionales comprometidos con la defensa de la Constitución, la transparencia institucional y el respeto por los derechos y garantías de todos los ciudadanos.
+                </p>
+            </div>
+            <img src="static/imagenes/adp_intgr_1.png" alt="foto adp" class="logo" style="width:900px;height: 500;">  <!--Imagen fondo quienes somos-->
+          </div>
+      </div>
+    </div>                                                                     
+    <div id="vision-direccion" class="container" style="color: black">                                <!--Tarjeta Vision-->
+      <div class="text" style="text-align:center; height: 300px; width: 900px;">
+        <h2>Visión</h1>
+        <p>Participar activamente en todos los espacios donde se define, aplica y controla el funcionamiento de la justicia, desde el ámbito legislativo hasta el ejecutivo y el judicial, tanto a nivel local como nacional.
+           Nuestros integrantes ocupan cargos en comisiones, el tribunal de disciplina y el Consejo Directivo del Colegio Público de Abogados de la Capital Federal, en el Consejo de la Magistratura de la Ciudad y en distintos espacios académicos y del Poder Ejecutivo local y Nacional, aportando nuestra mirada profesional y ética.
+           Impulsar propuestas, analizamos políticas públicas, acompañamos causas relevantes para la sociedad, generamos espacios de formación, debates y acciones de visibilización en redes y medios de comunicación.</p>
+      </div>
+    </div>
+    <div id="objetivos-direccion" class="container" style="color: black; gap: 10rem;">                <!--Tarjeta Objetivos-->
+      <div class="text" style="width:1000px; text-align: center;width: 900px;">
+        <h2>Objetivos</h2>
+        <p>
+          Queremos fortalecer la Justicia, las Instituciones Republicanas y el Estado de Derecho como garantes de una sociedad más justa, libre, solidaria y democrática.
+          Buscamos consolidar la independencia del Poder Judicial, jerarquizar la tarea de los abogados y promover una ciudadanía informada, capaz de participar de los asuntos públicos. Aspiramos a ser un puente entre la comunidad jurídica y la sociedad, facilitando el acceso a la justicia y defendiendo los valores que sostienen nuestra democracia.
+        </p>
+      </div>
+    </div>
+   </main>
+   
+   <app-footer></app-footer>
+
+   <script>
+     function dirigirSeccion(id) {                                                                     //Script para redirigir adentro de la pagina
+        const seccion = document.getElementById(id)
+        seccion.scrollIntoView({ behavior: "smooth" })
+     }
+   </script>
+</body> 
+</html>
