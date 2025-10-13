@@ -1,6 +1,6 @@
-import './equipo/list-comisiones.js';
-import './equipo/list-autoridades.js';
-import './equipo/list-secretarias.js';
+import './equipo/app-list-comisiones.js';
+import './equipo/app-list-autoridades.js';
+import './equipo/app-list-secretarias.js';
 
 class AppEquipoList extends HTMLElement {
     constructor() {
@@ -13,7 +13,7 @@ class AppEquipoList extends HTMLElement {
                     <button id="btn-comisiones" class="equipoListNavItem">Comisiones</button>
                 </div>
                 <div id="list-container">
-                    <list-autoridades><list-autoridades>
+                    <app-list-autoridades></app-list-autoridades>
                 </div>
             </div>
         `
@@ -26,19 +26,19 @@ class AppEquipoList extends HTMLElement {
 
         autoridadesBtn.addEventListener('click', () => {
             listContainer.innerHTML = '';
-            listContainer.innerHTML = '<list-autoridades></list-autoridades>';
+            listContainer.innerHTML = '<app-list-autoridades></app-list-autoridades>';
             entry.target.classList.add('nav-item-clicked');
             io.unobserve(entry.target);     
         });
 
         secretariasBtn.addEventListener('click', () => {
             listContainer.innerHTML = '';
-            listContainer.innerHTML = '<list-secretarias></list-secretarias>';
+            listContainer.innerHTML = '<app-list-secretarias></app-list-secretarias>';
         });
 
         comisionesBtn.addEventListener('click', () => {
             listContainer.innerHTML = '';
-            listContainer.innerHTML = '<list-comisiones></list-comisiones>';
+            listContainer.innerHTML = '<app-list-comisiones></app-list-comisiones>';
         });
 
         const targets = [autoridadesBtn, secretariasBtn, comisionesBtn].filter(Boolean);

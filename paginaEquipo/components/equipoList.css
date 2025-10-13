@@ -1,11 +1,12 @@
 app-equipo-list .equipoListContainer {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-evenly;
     width: 100%;
     background-color: #ffffff;
     font-family: "Lora", Sans-serif;
+    padding: 50px 0px;
     
 
 }
@@ -47,7 +48,7 @@ app-equipo-list .listEquipoContainer {
     justify-content: center;
     width: auto;
     background-color: #ffffff;
-    padding: 10px 0;
+    padding: 50px 0px;
     gap: 3rem;
 }
 
@@ -56,7 +57,7 @@ app-equipo-list .listEquipoRow {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 app-equipo-list .listEquipoColumn {
@@ -64,11 +65,11 @@ app-equipo-list .listEquipoColumn {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 app-equipo-list .listEquipoText {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Lora", Sans-serif;
     color: #006B93;
 }

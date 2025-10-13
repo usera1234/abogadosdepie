@@ -7,9 +7,11 @@ class AppSecretariasRow1 extends HTMLElement {
 
         this.innerHTML = `
             <div class="listEquipoRow">
-                <app-secretaria-pablo-daniel-sanabria></app-secretaria-pablo-sanabria>
+
+                <app-secretaria-pablo-daniel-sanabria></app-secretaria-pablo-daniel-sanabria>
 
                 <app-secretaria-marcos-nazar-anchorena></app-secretaria-marcos-nazar-anchorena>
+                
             </div>
         `
     }

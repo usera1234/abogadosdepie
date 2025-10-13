@@ -1,4 +1,4 @@
-class AppSecretariaCarlosLaman extends HTMLElement {
+class AppAutoridadesCarlosLaman extends HTMLElement {
     constructor(){
         super()
 
@@ -9,7 +9,7 @@ class AppSecretariaCarlosLaman extends HTMLElement {
                         <div class="listEquipoRedes">
                             <div class="listEquipoRedesRow">
                                 <img src="static/imagenes/icono-persona-equipo.png" alt="icono-persona" class="listEquipoRedesImg">
-                                <p class="listEquipoRedesText">Secretario</p>
+                                <p class="listEquipoRedesText">Vocal suplente</p>
                             </div>
                             <div class="listEquipoRedesRow">
                                 <img src="static/imagenes/linkedin-equipo.png" alt="LinkedIn" class="listEquipoRedesImg">
@@ -20,4 +20,4 @@ class AppSecretariaCarlosLaman extends HTMLElement {
         `
     }
 }
-customElements.define('app-secretaria-carlos-laman',AppSecretariaCarlosLaman)
+customElements.define('app-autoridades-carlos-laman',AppAutoridadesCarlosLaman)

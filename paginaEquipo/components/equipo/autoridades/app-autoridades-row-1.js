@@ -9,11 +9,13 @@ class AppAutoridadesRow1 extends HTMLElement {
 
         this.innerHTML = `
             <div class="listEquipoRow">
+
                 <app-autoridades-agustin-pesce></app-autoridades-agustin-pesce>
 
                 <app-autoridades-beatriz-torres></app-autoridades-beatriz-torres>
 
                 <app-autoridades-nicolas-durrieu></app-autoridades-nicolas-durrieu>
+                
             </div>
         `
     }

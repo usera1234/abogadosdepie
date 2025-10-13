@@ -9,11 +9,13 @@ class AppAutoridadesRow4 extends HTMLElement {
 
         this.innerHTML = `
             <div class="listEquipoRow">
+
                 <app-autoridades-marisa-kolansisky></app-autoridades-marisa-kolansisky>
 
                 <app-autoridades-carlos-laman></app-autoridades-carlos-laman>
 
                 <app-autoridades-adrian-diego-campos></app-autoridades-adrian-diego-campos>
+                
             </div>
         `
     }

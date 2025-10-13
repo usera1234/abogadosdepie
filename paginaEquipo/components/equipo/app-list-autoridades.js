@@ -24,4 +24,4 @@ class AppListAutoridades extends HTMLElement {
         `
     }
 }
-customElements.define('list-autoridades', AppListAutoridades);    
+customElements.define('app-list-autoridades', AppListAutoridades);    
