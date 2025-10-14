@@ -130,3 +130,28 @@ app-equipo-list .listEquipoTitle {
     margin: 0;
     text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+    app-equipo-list .equipoListContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    app-equipo-list .listEquipoContainer {
+        align-items: center;
+    }
+    app-equipo-list .listEquipoRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    app-equipo-list .listEquipoColumn {
+        display: flex;
+        align-items: center;
+    }
+    app-equipo-list .equipoListNav {
+        align-items: center;
+    }
+    app-equipo-list .listEquipoText {
+        text-align: center;
+    }
+
+}

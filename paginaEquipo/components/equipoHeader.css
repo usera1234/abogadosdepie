@@ -58,3 +58,17 @@ app-equipo-header .equipoHeaderBanner {
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 768px) {
+    app-equipo-header .equipoHeaderContainer {
+        flex-direction: column;
+        height: auto;
+    }
+    app-equipo-header .equipoHeaderContainerNav {
+        flex-direction: column;
+        margin-right: 0px;
+    }
+    app-equipo-header .equipoHeaderImg {
+        margin-left: 0px;
+    }
+    
+}

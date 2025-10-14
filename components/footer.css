@@ -10,9 +10,11 @@
     align-items: center;
 }
 
-.container-row{
-    display:flex;
-    flex-direction:row;
+app-footer .footer-row {
+    display: flex;
+    flex-direction: row;
+    gap:12%; 
+    align-items: center;
 }
 
 .logo{
@@ -47,4 +49,13 @@ app-footer .hor-bar{
     height: 4px;
     background-color: rgb(88, 1, 62);
     border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+    app-footer .footer-container{
+        flex-direction: column;
+        height: auto;
+    }
+    app-footer .footer-row {
+        flex-direction: column;
+    } 
 }
