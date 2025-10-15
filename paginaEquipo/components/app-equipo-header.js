@@ -7,8 +7,8 @@ class AppEquipoHeader extends HTMLElement {
                  <img onclick="location.href='index.html'" src="static/imagenes/10a_logo_adp.png" alt="Equipo Header" class="equipoHeaderImg">
                 </div>
                 <div class="equipoHeaderContainerNav">
+                  <button onclick="location.href='index.html'"class="equipoHeaderNavItem">Inicio</button>
                   <button class="equipoHeaderNavItem" style="color: #7b0033; font-size: 2rem;">Nuestro Equipo</button>
-                  <button class="equipoHeaderNavItem">Trabajá con Nosotros</button>
                   <button class="equipoHeaderNavItem">Contacto</button>
                 </div>
               </div>
