@@ -9,7 +9,6 @@ class AppHeader extends HTMLElement {
                 <div class="HeaderContainerNav"> 
                   <button class="HeaderNavItem" style="color: #7b0033; font-size: 2rem;">Inicio</button>
                   <button img onclick="location.href='quienesSomos.html'"class="HeaderNavItem">Nuestro equipo</button>
-                  <button class="HeaderNavItem">Contacto</button>
                 </div>
               </div>
         `
