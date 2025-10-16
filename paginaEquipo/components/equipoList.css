@@ -19,6 +19,7 @@ app-equipo-list .equipoListNav {
     gap: 30px;
     margin: 20px 0;
     flex-shrink: 0;
+    margin-top: 50px;
 }
 
 app-equipo-list .equipoListNavItem {
