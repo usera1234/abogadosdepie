@@ -11,13 +11,6 @@ class AppListSecretarias extends HTMLElement {
         super();
         this.innerHTML = `
             <div class="listEquipoContainer">
-                /* <div class="listEquipoColumn"> 
-
-                    <div class="listEquipoText"> Relaciones Institucionales </div>
-
-                    <app-secretarias-row-1></app-secretarias-row-1>
-
-                <div> */
                 <div class="listEquipoColumn">
 
                     <div class="listEquipoText"> Comunicación </div>
@@ -65,3 +58,10 @@ class AppListSecretarias extends HTMLElement {
     }
 }
 customElements.define('app-list-secretarias', AppListSecretarias);    
+/* div class="listEquipoColumn"> 
+
+                    <div class="listEquipoText"> Relaciones Institucionales </div>
+
+                    <app-secretarias-row-1></app-secretarias-row-1>
+
+                <div> */
