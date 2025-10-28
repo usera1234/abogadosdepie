@@ -4,7 +4,7 @@ class AppSecretariaGustavoGerardoPorticella extends HTMLElement {
 
         this.innerHTML = `
                     <div class="listEquipoItem">
-                        <img src="static/imagenes/equipo/socios/gustavoGerardoPorticella.jpg" alt=" Gustavo Gerardo<br>Porticella" class="listEquipoImg">
+                        <img src="static/imagenes/equipo/socios/gustavoGerardoPorticella.jpeg" alt=" Gustavo Gerardo<br>Porticella" class="listEquipoImg">
                         <div class="listEquipoTitle"> Gustavo Gerardo<br>Porticella</div>
                         <div class="listEquipoRedes">
                             <div class="listEquipoRedesRow">

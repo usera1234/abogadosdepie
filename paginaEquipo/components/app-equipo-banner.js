@@ -3,7 +3,7 @@ class AppEquipoBanner extends HTMLElement {
         super();
         this.innerHTML =`
             <div class="equipoBannerContainer">
-                <img src="static/imagenes/banner-quienes-somos.jpg" alt="Equipo Banner" class="equipoBannerImg">
+                <img src="static/imagenes/adp_intgr_1.png" alt="Equipo Banner" class="equipoBannerImg">
                     <div class="equipoBannerText">
                         <!-- <h1 class="equipoBannerText">Nuestro Equipo</h3> -->
                     </div>

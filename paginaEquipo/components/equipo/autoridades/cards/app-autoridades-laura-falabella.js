@@ -4,7 +4,7 @@ class AppAutoridadesLauraFalabella extends HTMLElement {
 
         this.innerHTML = `
                     <div class="listEquipoItem">
-                        <img src="static/imagenes/equipo/socios/lauraFalabella.jpg" alt="Laura Falabella" class="listEquipoImg">
+                        <img src="static/imagenes/equipo/socios/lauraFalabella.jpeg" alt="Laura Falabella" class="listEquipoImg">
                         <div class="listEquipoTitle">Laura Falabella</div>
                         <div class="listEquipoRedes">
                             <div class="listEquipoRedesRow">
