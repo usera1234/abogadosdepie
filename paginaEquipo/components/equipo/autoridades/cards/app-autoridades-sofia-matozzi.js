@@ -4,7 +4,7 @@ class AppAutoridadesSofiaMatozzi extends HTMLElement {
 
         this.innerHTML = `
                     <div class="listEquipoItem">
-                        <img src="static/imagenes/equipo/socios/martinaAgosti.jpg" alt="Sofía Matozzi" class="listEquipoImg">
+                        <img src="static/imagenes/equipo/socios/sofia-matozzi.jpg" alt="Sofía Matozzi" class="listEquipoImg">
                         <div class="listEquipoTitle">Sofía Matozzi</div>
                         <div class="listEquipoRedes">
                             <div class="listEquipoRedesRow">

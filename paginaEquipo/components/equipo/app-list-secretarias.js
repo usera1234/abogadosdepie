@@ -11,13 +11,13 @@ class AppListSecretarias extends HTMLElement {
         super();
         this.innerHTML = `
             <div class="listEquipoContainer">
-                <div class="listEquipoColumn">
+                /* <div class="listEquipoColumn"> 
 
                     <div class="listEquipoText"> Relaciones Institucionales </div>
 
                     <app-secretarias-row-1></app-secretarias-row-1>
 
-                <div>
+                <div> */
                 <div class="listEquipoColumn">
 
                     <div class="listEquipoText"> Comunicación </div>
@@ -27,7 +27,7 @@ class AppListSecretarias extends HTMLElement {
                 <div>
                 <div class="listEquipoColumn">
 
-                    <div class="listEquipoText"> Académia </div>
+                    <div class="listEquipoText"> Académica </div>
 
                     <app-secretarias-row-3></app-secretarias-row-3>
 
