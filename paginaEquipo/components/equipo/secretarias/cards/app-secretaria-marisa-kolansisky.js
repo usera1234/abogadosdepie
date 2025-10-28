@@ -4,8 +4,8 @@ class AppSecretariaMariaKolansisky extends HTMLElement {
 
         this.innerHTML = `
                     <div class="listEquipoItem">
-                        <img src="static/imagenes/equipo/socios/mariaKolansisky.jpg" alt="Maria Kolansisky" class="listEquipoImg">
-                        <div class="listEquipoTitle">Maria Kolansisky</div>
+                        <img src="static/imagenes/equipo/socios/mariaKolansisky.jpg" alt="Marisa Esther Kulanczynsky" class="listEquipoImg">
+                        <div class="listEquipoTitle">Marisa Esther Kulanczynsky</div>
                         <div class="listEquipoRedes">
                             <div class="listEquipoRedesRow">
                                 <img src="static/imagenes/icono-persona-equipo.png" alt="icono-persona" class="listEquipoRedesImg">

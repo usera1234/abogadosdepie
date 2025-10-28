@@ -115,3 +115,16 @@
       background-color: #f9f9f9;
       background-size: cover; 
     }
+.reveal {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+@keyframes animar {
+  from { transform: translateX(-100px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+.animacion {
+  animation: animar 1s ease-out forwards;
+  will-change: transform, opacity;
+}
