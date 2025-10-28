@@ -9,11 +9,10 @@ class AppSecretariasRow2 extends HTMLElement {
             <div class="listEquipoRow">
 
                 <app-secretaria-fernando-felder></app-secretaria-fernando-felder>
-
-                <app-secretaria-gisela-rios></app-secretaria-gisela-rios>
                 
             </div>
         `
     }
 }
 customElements.define('app-secretarias-row-2', AppSecretariasRow2)
+//<app-secretaria-gisela-rios></app-secretaria-gisela-rios>
