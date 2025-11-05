@@ -17,13 +17,19 @@
   <link rel="stylesheet" href="paginaEquipo/components/equipoBanner.css?28102025">
   <link rel="stylesheet" href="paginaEquipo/components/equipoList.css?28102025">
   <link rel="stylesheet" href="components/footer.css?28102025">
+  <link rel="stylesheet" href="paginaEquipo/components/animar.css?28102025">
   <script type="module" src="paginaEquipo/app-equipo.js?28102025"></script>
   <script type="module" src="components/app-footer.js?28102025"></script>
+  <script type="module" src="paginaEquipo/components/app-animar.js?28102025"></script>
   <link rel="icon" type="image/png" href="static\imagenes\escudo-abogacia-negro.png">
 </head>
 <body class="html-body" style="overflow-x:hidden; margin: 0px; font-family: sans-serif;">
-  <app-equipo if="equipo"></app-equipo> <!-- file:///C:/Proyectos/abogadosdepie/Abogados-de-Pie/paginaEquipo/app-equipo.js -->
+  <app-equipo id="equipo"></app-equipo> <!-- file:///C:/Proyectos/abogadosdepie/Abogados-de-Pie/paginaEquipo/app-equipo.js -->
 
   <app-footer id="footer"></app-footer> <!-- file:///C:/Proyectos/abogadosdepie/Abogados-de-Pie/components/app-footer.js -->
 </body>
+<script type="module">
+  import { animar } from './paginaEquipo/components/app-animar.js';
+  animar(document.querySelectorAll('[data-animate]'));
+</script>
 </html>

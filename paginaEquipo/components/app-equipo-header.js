@@ -1,8 +1,9 @@
+
 class AppEquipoHeader extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-              <div class="equipoHeaderContainer">
+              <div class="equipoHeaderContainer" data-animate>
                 <div class="equipoHeaderContainerImg">
                  <img onclick="location.href='index.html'" src="static/imagenes/10a_logo_adp.png" alt="Equipo Header" class="equipoHeaderImg">
                 </div>
@@ -12,6 +13,11 @@ class AppEquipoHeader extends HTMLElement {
                 </div>
               </div>
         `
+    
+    import('./app-animar.js')
+      .then(({ animar }) => animar(this.querySelectorAll('[data-animate]')))
+      .catch(console.error);
     }
 }
+
 customElements.define('app-equipo-header', AppEquipoHeader);

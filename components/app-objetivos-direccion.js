@@ -3,7 +3,7 @@ class AppObjetivosDireccion extends HTMLElement {
         super()
 
             this.innerHTML =`
-                <div id="objetivos-direccion" class="container" style="color: black; gap: 10rem;">                <!--Tarjeta Objetivos-->
+                <div id="objetivos-direccion" class="container" style="color: black; gap: 10rem;" data-animate>                <!--Tarjeta Objetivos-->
                     <div class="text" style="text-align: center;">
                         <h2>Objetivos</h2>
                         <p>
@@ -13,6 +13,9 @@ class AppObjetivosDireccion extends HTMLElement {
                     </div>
                 </div>
             `
+        import('../paginaEquipo/components/app-animar.js')
+           .then(({ animar }) => animar(this.querySelectorAll('[data-animate]')))
+           .catch(console.error);
     }
 }
 customElements.define('app-objetivos-direccion', AppObjetivosDireccion);

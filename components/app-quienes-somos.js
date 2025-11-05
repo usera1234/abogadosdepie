@@ -3,7 +3,7 @@ class AppQuienesSomos extends HTMLElement {
         super()
 
             this.innerHTML = `
-                <div id="quienes-somos-direccion" class="container" style="gap: 10rem;">                            <!--Tarjeta Quienes somos-->
+                <div id="quienes-somos-direccion" class="container" style="gap: 10rem;" data-animate>                            <!--Tarjeta Quienes somos-->
                     <div class="tarjeta">
                         <div class="text" style="text-align:center; height: 700px; width: 900px;">
                             <div class="container" style="flex-direction: column; border-radius: 50px;">
@@ -17,6 +17,9 @@ class AppQuienesSomos extends HTMLElement {
                     </div>
                 </div>
             `
+        import('../paginaEquipo/components/app-animar.js')
+           .then(({ animar }) => animar(this.querySelectorAll('[data-animate]')))
+           .catch(console.error);
     }
 }
 customElements.define('app-quienes-somos', AppQuienesSomos);

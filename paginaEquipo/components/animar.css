@@ -1,0 +1,15 @@
+/* paginaEquipo/components/animar.css */
+.reveal {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+@keyframes aparecer {
+  from { transform: translateX(-100px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+.animar {
+  animation: aparecer 1s ease-out forwards;
+  will-change: transform, opacity;
+}

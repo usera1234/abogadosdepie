@@ -6,7 +6,7 @@ class AppEquipoList extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            <div class="equipoListContainer">
+            <div class="equipoListContainer" data-animate>
                 <div class="equipoListNav">
                     <button id="btn-autoridades" class="equipoListNavItem nav-item-clicked">Autoridades</button>
                     <button id="btn-secretarias" class="equipoListNavItem">Secretarías</button>
@@ -17,6 +17,9 @@ class AppEquipoList extends HTMLElement {
                 </div>
             </div>
         `
+        import('./app-animar.js')
+         .then(({ animar }) => animar(this.querySelectorAll('[data-animate]')))
+         .catch(console.error);
     }
     connectedCallback() {
         const listContainer = this.querySelector('#list-container');
